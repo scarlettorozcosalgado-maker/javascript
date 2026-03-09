@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: moccasin;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function ponertitulorojo() {
+            document.getElementById("titulo").style = "color: red"
+        }
+        function ponertitulonegro() {
+            document.getElementById("titulo").style = "color: black"
+        }
+    </script>
+
+    <h1 id="titulo" onmouseover="ponertitulorojo()" onmouseout="ponertitulonegro()">bienvenido a Javascript</h1>
+    <h2>el primer paso es el mas grande</h2>
+    <p>esta pagina es muy sencilla</p>
+    <p>(pero tiene un gran secreto >>> presione F2)</p>
+</body>
+
+</html>
