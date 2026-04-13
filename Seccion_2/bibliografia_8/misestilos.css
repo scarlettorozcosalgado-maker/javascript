@@ -1,0 +1,31 @@
+#portada{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    color: dodgerblue;
+}
+p{
+ font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(145, 180, 93);
+}
+h2{
+    color: blueviolet;
+}
+h3{
+    color: darkred;
+}
+ol{
+    color: darkslategrey;
+    font-weight: bolder;
+}
+#aventuras{
+    color: maroon;
+}
+style {
+    color: darkcyan;
+}
+#para{
+    color: crimson;
+}
