@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ingresos usuario</title>
+</head>
+<body>
+    <p>ingresa tu nombre</p>
+    <input type="text" id="nombre de usuario">
+    <button onclick="mostarnombre()">ingresar</button>
+    <h1 id="salida">No se tu nombre</h1>
+    <script>
+        function mostarnombre(){
+            let elementoNombre = document.getElementById("nombre de usuario");
+            let elementoTexto = document.getElementById("salida");
+            let mensaje = "Tu te llamas "+ elementoNombre.value 
+
+            elementoTexto.textContent = mensaje;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingresos de usuario</title>
+</head>
+<body>
+    <input type="text" id="inputexto" value="este es un mensaje">
+    <button onclick="mostrarTexto()">click aquí</button>
+    <h1 id="titulo">Ingrese su direccion</h1>
+    <script>
+        function mostrarTexto(){
+           let elementoDireccion = document.getElementById ("inputexto");
+           let elementoTexto = document.getElementById("titulo");
+           let mensaje = "tu direccion es"+ elementoDireccion.value
+           elementoTexto.textContent=mensaje;
+        }
+    </script>
+
+</body>
+</html>

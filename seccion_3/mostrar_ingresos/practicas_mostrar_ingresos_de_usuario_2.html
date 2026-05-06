@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputTexto" value="Luis Miguel">
+    <button onclick="mostrarTexto()">click aqui</button>
+    <h1 id="titulo">mi artista favorito es joaquin</h1>
+    <script>
+        function mostrarTexto(){
+        let elementoArtista= document.getElementById ("inputTexto");
+        let elementoTexto=document.getElementById("titulo");
+        let mensaje = "mi artista favorito es "+elementoArtista.value
+        elementoTexto.textContent=mensaje;
+        }
+       
+    </script>
+</body>
+</html>
