@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica2</title>
+</head>
+<body>
+    <button onclick="iniciarAudio()">pokemon</button>
+   <img src="imagenes/bulbo.png" >
+     
+    <audio id="audioPokemon" controls>
+
+    <source src="audio/cries_pokemon_legacy_1 (1).ogg" type="audio/mpeg">
+
+sonido no habilitado
+
+    </audio>
+
+    <script>
+
+        let audioPokemon = document.getElementById ("audioPokemon")
+
+    function iniciarAudio() {
+
+    audioPokemon.play();
+}
+    </script>
+</body>
+</html>
