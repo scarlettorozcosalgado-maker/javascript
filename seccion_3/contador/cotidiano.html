@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juego de preguntas</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #contador{
+            color: rgb(255, 255, 255);
+            font-size: 44em;
+        }
+
+
+    </style>
+</head>
+
+<body onload="iniciarContador()">
+    <div id="contador">40</div>
+    <h1>RESPONDE LAS SIGUIENTES PREGUNTAS</h1>
+    <p> 1.¿cual es la capital de francia?</p>
+    <input type="text" id="capital">
+    <p>2.¿cuantos continentes hay?</p>
+    <input type="text" id="continentes">
+    <p>3.¿cual es el pais mas grande?</p>
+    <input type="text" id="pais">
+    <p>4.¿cuando es el dia de la independencia de costa rica?</p>
+    <input type="text" id="independencia">
+    <p>5.¿como se dice gato en ingles?</p>
+    <input type="text" id="gato">
+    <button onclick="detenerConteo()">finalizado</button>
+    <button onclick="location.reload();">volver a intentar</button>
+    <script>
+        let tiempo = 40;
+        let intervalo;
+        function actualizarContador() {
+            document.getElementById("contador").textContent = tiempo;
+        }
+        function contar() {
+            if (tiempo > 0) {
+                tiempo--;
+                console.log(tiempo)
+                actualizarContador();
+            }
+            else {
+                detenerContador();
+                alert("GAME OVER")
+            }
+        }
+    
+        function iniciarContador() {
+            if (!intervalo)
+            intervalo = setInterval(contar, 1000);
+        }   
+        
+
+        function detenerContador() {
+            clearInterval(intervalo);
+            intervalo = null;
+            alert("GAME OVER")
+        }
+
+        function reiniciarConteo() {
+            reiniciarConteo();
+            tiempo = 40;
+            actualizarContador();
+            
+
+        }
+        function detenerConteo() {
+            alert(new Date().toLocaleDateString('es-ES'))
+        }
+        actualizarContador();
+    </script>
+</body>
+
+</html>
