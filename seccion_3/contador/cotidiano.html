@@ -12,7 +12,10 @@
         }
         #contador{
             color: rgb(255, 255, 255);
-            font-size: 44em;
+            font-size: 22em;
+        }
+        text{
+            color: darkblue;
         }
 
 
@@ -34,6 +37,13 @@
     <input type="text" id="gato">
     <button onclick="detenerConteo()">finalizado</button>
     <button onclick="location.reload();">volver a intentar</button>
+
+    <audio id="audioAlarma">
+
+        <source src="audio/alarma.mp3" type="audio/mpeg">
+        sonido no habilitado
+
+    </audio>
     <script>
         let tiempo = 40;
         let intervalo;
@@ -49,6 +59,7 @@
             else {
                 detenerContador();
                 alert("GAME OVER")
+                document.getElementById("audioAlarma").play();
             }
         }
     
@@ -72,8 +83,14 @@
 
         }
         function detenerConteo() {
-            alert(new Date().toLocaleDateString('es-ES'))
-        }
+            let capital = document.getElementById ("capital")
+            let continentes = document.getElementById("continentes")
+            let pais = document.getElementById("pais")
+            let independencia = document.getElementById("independencia")
+            let gato = document.getElementById("gato")
+            alert(new Date().toLocaleDateString('es-ES')+
+             "\n"+capital.value+continentes.value + "\n"+ pais.value+ "\n" + independencia.value+"\n"+gato.value)
+        } 
         actualizarContador();
     </script>
 </body>
