@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random1</title>
+</head>
+<body>
+    <p>
+        <button onclick="mostrarMensaje(10, 50)">click aqui</button>
+    </p>
+    <script>
+        function mostrarMensaje(minimo, maximo){
+
+            let aleatorio = Math.floor(Math.random() * (maximo - minimo) + minimo);
+            alert (aleatorio);
+        }
+    </script>
+</body>
+</html>
