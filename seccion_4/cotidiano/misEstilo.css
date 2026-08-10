@@ -1,0 +1,14 @@
+body{
+    background-color: pink;
+}
+input{
+    padding: 14px;
+}
+button{
+    padding: 13px;
+    color: deeppink;
+}
+h2{
+    color: fuchsia;
+    padding: 12px;
+}

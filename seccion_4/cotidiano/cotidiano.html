@@ -6,27 +6,29 @@
     <title>cotidiano</title>
 </head>
 <body>
- 
-     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 320px; margin: 20px auto; font-family: sans-serif;">
+<link rel="stylesheet" href="misEstilo.css">
 
-    <input type="number" id="n1" padding: 10px;>
-    <input type="number" id="n2" padding: 10px;>
-    <input type="number" id="resultado" padding: 10px>
+  <h2>CALCULADORA</h2>
 
-    <button onclick="suma()" style="padding: 15px;">+</button>
-    <button onclick="resta()" style="padding: 15px;">-</button>
-    <button onclick="multiplicacion()" style="padding: 15px;">X</button>
-    <button onclick="divison()" style="padding: 15px;">/</button>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
 
-    <button onclick="raiz()" style="padding: 15px;">raiz</button>
-    <button onclick="absoluto()" style="padding: 15px;">absoluto</button>
-    <button onclick="potencia()" style="padding: 15px;">potencia</button>
-    <button onclick="random(n1,n2)" style="padding: 15px;">random</button>
+    <button onclick="suma()">+</button><br>
+    <button onclick="resta()">-</button>
+    <button onclick="multiplicacion()" >X</button><br>
+    <button onclick="divison()">/</button>
+    <button onclick="raiz()">raiz</button><br>
+    <button onclick="absoluto()">absoluto</button>
+    <button onclick="potencia()">potencia</button>
+    <button onclick="random(n1,n2)" >random</button>
 
-    
-    <button onclick="round()" style="padding: 15px;">round</button>
-    <button onclick="floor()" style="padding: 15px;">floor</button>
-    <button onclick="ceil()" style="padding: 15px; grid-column: span 2;">ceil</button>
+    <h2>resultado</h2>
+
+    <input type="number" id="resultado">
+
+    <button onclick="round()">round</button>
+    <button onclick="floor()">floor</button>
+    <button onclick="ceil()">ceil</button>
 
     <script>
       function suma(){
@@ -61,6 +63,10 @@
         document.getElementById("resultado").value = total;
       }
       function absoluto(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = Math.abs(numero1, numero2)
+        document.getElementById("resultado").value = total;
       }
       function potencia(){
         let numero1 = parseInt (document.getElementById("n1").value);
@@ -71,9 +77,23 @@
       function random(minimo, maximo){
         let numero1 = parseInt (document.getElementById("n1").value);
         let numero2 = parseInt (document.getElementById("n2").value);
-        let total = Math.floor(Math.random() * (maximo - minimo) + minimo);
+        let total = Math.random(n1,n2) 
         document.getElementById("resultado").value = total;
       }
+      function round(){
+
+        total = Math.round(document.getElementById("resultado").value)
+        document.getElementById("resultado").value = total; 
+      }
+      function floor(){
+        total = Math.floor(document.getElementById("resultado").value)
+        document.getElementById("resultado").value = total;
+      }
+      function ceil(){
+        total = Math.ceil(document.getElementById("resultado").value)
+        document.getElementById("resultado").value = total;
+      }
+
     </script>
 
   </div>
