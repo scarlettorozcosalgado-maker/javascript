@@ -9,8 +9,9 @@
  
      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 320px; margin: 20px auto; font-family: sans-serif;">
 
-    <input type="text" id="n1" padding: 10px;>
-    <input type="text" id="resultado" padding: 10px; background-color: #f0f0f0;">
+    <input type="number" id="n1" padding: 10px;>
+    <input type="number" id="n2" padding: 10px;>
+    <input type="number" id="resultado" padding: 10px>
 
     <button onclick="suma()" style="padding: 15px;">+</button>
     <button onclick="resta()" style="padding: 15px;">-</button>
@@ -20,12 +21,60 @@
     <button onclick="raiz()" style="padding: 15px;">raiz</button>
     <button onclick="absoluto()" style="padding: 15px;">absoluto</button>
     <button onclick="potencia()" style="padding: 15px;">potencia</button>
-    <button onclick="random()" style="padding: 15px;">rando</button>
+    <button onclick="random(n1,n2)" style="padding: 15px;">random</button>
 
     
     <button onclick="round()" style="padding: 15px;">round</button>
     <button onclick="floor()" style="padding: 15px;">floor</button>
     <button onclick="ceil()" style="padding: 15px; grid-column: span 2;">ceil</button>
+
+    <script>
+      function suma(){
+      let numero1 = parseInt (document.getElementById("n1").value);
+      let numero2 = parseInt (document.getElementById("n2").value);
+      let operacion = numero1 + numero2
+      document.getElementById("resultado").value = operacion;
+      }
+
+      function resta(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt(document.getElementById("n2").value);
+        let total = numero1 - numero2
+        document.getElementById("resultado").value = total;
+      }
+      function multiplicacion(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = numero1 * numero2
+        document.getElementById("resultado").value = total;
+      }
+      function divison(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = numero1 / numero2
+        document.getElementById("resultado").value = total;
+      }
+      function raiz(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = Math.sqrt (numero1, numero2)
+        document.getElementById("resultado").value = total;
+      }
+      function absoluto(){
+      }
+      function potencia(){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = numero1 ** numero2
+        document.getElementById("resultado").value = total;
+      }
+      function random(minimo, maximo){
+        let numero1 = parseInt (document.getElementById("n1").value);
+        let numero2 = parseInt (document.getElementById("n2").value);
+        let total = Math.floor(Math.random() * (maximo - minimo) + minimo);
+        document.getElementById("resultado").value = total;
+      }
+    </script>
 
   </div>
 
