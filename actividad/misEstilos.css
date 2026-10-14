@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+}
+#usuario{
+    color: darkcyan;
+
+    padding: 10px;
+}
+h1{
+    color: blue;
+}
+#personas{
+    padding: 10px;
+}
+#respuesta{
+    padding: 20px;
+}
+#respuesta2{
+    padding: 20px;
+}
