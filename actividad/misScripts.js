@@ -15,20 +15,20 @@ function boton(){
 
                 // Si hay descuento
                 if (cantidad<=4) {
-                    respuesta2 = "no hay descuento"
+                    respuesta2 = "No hay descuento"
                 }
                 else if (cantidad>=5) {
-                    respuesta2= "su descuento es de" + descuento
+                    respuesta2= "Su descuento es de" + descuento
                 }
                 else if (cantidad>=9) {
-                    respuesta2 = "su descuento es de" + descuento2
+                    respuesta2 = "Su descuento es de" + descuento2
                 }
             }
             else if (usuario || 8000 && 15000) {
                 respuesta = "Lo que podemos ofrecerle es alquiler de cancha"
 
                  if (cantidad<=4) {
-                    respuesta2 = "no hay descuento"
+                    respuesta2 = "No hay descuento"
                 }
                 else if (cantidad>=5) {
                     respuesta2= "su descuento es de" + descuento

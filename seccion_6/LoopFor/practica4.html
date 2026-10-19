@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica</title>
+</head>
+<body>
+    <input type="number" id="numero">
+    <button onclick="testLoop()">Calcular</button>
+    <script>
+        
+        function testLoop(numero1){
+            let numero = document.getElementById("numero").value;
+            let resultado
+            for(x=1; x <= 10; ++x){
+               document.write("<br>"+ numero + " x "+  x + " resultado" )
+            }
+        }
+
+    </script>
+</body>
+</html>
