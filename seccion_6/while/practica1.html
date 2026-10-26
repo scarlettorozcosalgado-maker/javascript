@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical</title>
+</head>
+<body>
+    <script>
+        let maxVueltas = parseInt(prompt("Cuantas vueltas quiere dar?"));
+
+        function vueltas(limite) {
+            let contador = 1; 
+            
+            while (contador <= limite) {
+                document.write("<h1>Tu número de vuelta es " + contador + "</h1>");
+                contador++;
+            }
+        }
+
+        vueltas(maxVueltas);
+    </script>
+</body>
+</html>

@@ -7,13 +7,18 @@
 </head>
 <body>
     <script>
-        function multiplicar(){
-            let multiplicar;
-            do{
-                multiplicar = prompt("TABLAS DE MULTIPLICAR")
-                
-            }while(kjh)
+        let numero = parseInt(prompt("TABLAS DE MULTIPLICAR"));
+        
+        function multiplicar() {
+            let contador = 1;
+
+            do {
+                console.log(numero + " x " + contador + " = " + (numero * contador));
+                contador++;
+            } while (contador <= 10);
         }
+
+        multiplicar();
     </script>
 </body>
 </html>
