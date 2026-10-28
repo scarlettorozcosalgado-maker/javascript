@@ -1,0 +1,34 @@
+#titulo {
+    color: blueviolet;
+    border-radius: 300px;
+    border-color: aquamarine;
+    align-items: center;
+}
+#nombre{
+    color: darkturquoise;
+    font-weight: bold
+}
+#uno{
+    color: violet;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 300px;
+    border-color: aqua
+}
+#dos{
+color: violet;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+border-radius: 300px;
+border-color: cadetblue;
+}
+#tres{
+color: violet;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+border-radius: 300px;
+border-color: cornflowerblue;
+}
+body{
+    align-items: center;
+}
