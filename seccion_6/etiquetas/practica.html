@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica1</title>
+</head>
+<body>
+    <script>
+        let miArray = [[2, 4, 5], [3, 0, 6], [9, 4, 7]];
+
+        function testLoop(){
+
+           Bucle:  for(let numeros of miArray ){
+                
+                for(let n1 of numeros ){
+
+                    if (n1 == 0) {
+
+                        break Bucle ;
+                    }
+                    console.log(n1)
+                }
+            }
+        }
+        testLoop()
+    </script>
+</body>
+</html>
